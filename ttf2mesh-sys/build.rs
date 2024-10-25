@@ -32,7 +32,7 @@ fn main() {
         .flag("-Wall")
         .flag("-pedantic")
         .flag("-std=c99")
-        .flag("-D_POSIX_C_SOURCE=199309L")
+        // .flag("-D_POSIX_C_SOURCE=199309L") // Use a more recent version if needed
         .file("ttf2mesh/ttf2mesh.c")
         .compile("ttf2mesh");
 }
